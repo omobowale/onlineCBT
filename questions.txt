@@ -1,0 +1,114 @@
+Which of the following is used to get the length of an array named arr in Java?###
+
+All programs can be written in terms of three types of control structures: _______, _______ and _________.###
+
+Instance variables of types char, byte, short, int, long, float and double are all given the value ________ by default.###
+
+Instance variables of type boolean are given the value ______ by default.###
+
+Which of the following indicates Java program for declaring a variable, sum, of type integer.###
+
+Given that,
+int x = 4;
+What is the output of the following?
+
+System.out.print(++x + " : ");
+System.out.print(++x);
+###
+
+if (gender == 1)
+System.out.println("Woman");    
+else;
+System.out.println("Man");
+What is the error in the above code?###
+
+Write a Java statement to accomplish each of the following task: Assign 1 to variable x of integer type.###
+
+Keyword public is a(n)______###
+
+Java provides two primitive types for storing floating-point numbers in memory: __________ and __________.###
+
+Return type ________ indicates that a method will not return a value.###
+
+The format specifier _______ is used to output values of type float or double.###
+
+Types in Java are divided into two categories : _______ types and _________ types.###
+
+Java applications begin execution at method _______.###
+
+Write statement to accomplish the following task:
+Create a Scanner called input that reads values from the standard input.###
+
+The arithmetic operators with the same precedence as multiplication are ________ and ________ .###
+
+___________ are used to document a program and improve its readability.###
+
+Assuming that x = 2 and y = 3, what does the following statement display? 
+System.out.printf( "Value of %d + %d is %d\n", x, y, ( x + y ) );###
+
+Given that y = ab + 7c, which of the following is the correct Java statement for this equation?###
+
+What is the result of the following? x = 2 % 2 + 2 * 2 - 2 / 2 ;###
+
+An array is a group of _________(called elements or components) containing values that all have the same _________.###
+
+The ____________ allows you to iterate through the elements in an array without using a counter.###
+
+The number used to refer to a particular array element is called the element’s ___________.###
+
+An array that uses two indices is referred to as a(n) ____________ array.###
+
+Assume int[] b = new int[ 10 ]; Which of the following is not a property of the array b? ###
+
+Assume int[][] a = { { 1, 2 }, { 3, 4 }, {4, 5} }; What is the value of a[0][1] + a[1][1] ?###
+
+One-dimensional array p contains four elements. The names of those elements are ________,_________ ,___________ and ___________ .###
+
+In a two-dimensional array, the first index identifies the _________ of an element and the second index identifies the _________ of an element.###
+
+An m-by-n array contains ______ rows, ______ columns and _______ elements. ###
+
+The name of the element in row 3 and column 5 of array d is ___________.###
+
+Write Java statement to accomplish the following task: Display the value of element 6 of array f.###
+
+Write statement that perform the following one-dimensional-array operation: Set the 10 elements of integer array counts to zero.###
+
+A variable known only within the method in which it’s declared is called a(n) ____________.###
+
+Give the method header for the following method: Method smallest, which takes three integers x, y and z and returns an integer.###
+
+What is the output  of the following : for ( i = 19; i > 1; i -= 2 ) {
+System.out.print( i + " : " ); } ###
+
+What is the output  of the following : for ( i = 5; i <= 100; i += 10 ) {
+System.out.print( i + " , "); } ###
+
+What is the output  of the following : int x = 0; while ( x < 10) {
+System.out.print( x );    x++; } ###
+
+What is the output  of the following : for ( k = 10; k <= 100 ; k += 10 ) {
+System.out.print( (k * 2) + " , " ); } ###
+
+What is the output  of the following : for ( int i = 2; i <= 20; i += 3 ) {
+System.out.print( i + " : " ); } ###
+
+Given the following method header declaration : public void method1( int a, float b ), which of the following is correct?###
+
+Which of the following is correct?###
+
+Given that: int [] f = new int [6]; what is the value of f[4];###
+
+Given that: int c = 7; what is the output of System.out.println("The value of c is " + c++);###
+
+The functions performed by a class in Java is often called ____________, while the initializer of instance variables is called ___________.###
+
+Which of the following is an example of a primitive data type.###
+
+Which of the following can be said to be a data type of double.
+
+
+
+
+
+

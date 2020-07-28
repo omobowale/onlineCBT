@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="jq/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css" />
+<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<title>CBT</title>
+
+<body>
+
+<div class="container">
+
+		
+		 <nav role="navigation" id="navigate" class="navbar navbar-expand-lg navbar-light bg-dark mt-0 mb-5 fixed-top">
+    	<a class="navbar-brand btn btn-outline-secondary disabled text-white" href="#">C B T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarContent" data-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon border-dark"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse bg-transparent" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+        	<li class="nav-item">
+            	<a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+           
+           
+        </ul>
+        
+        <button class="btn mr-5 btn-outline-secondary" id="loginButton" data-toggle="modal" data-target="#loginModal">Start Test</button>
+        
+        <form class="form-inline my-2 my-lg-0">
+        	
+            
+        	<div class="input-group">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                <div class="input-group-append"><button type="submit" class="btn btn-outline-info">Go</button></div>
+            </div>
+        </form>
+        </div>
+    </nav>
+
+<!--<button class="btn btn-outline-dark" id="loginButton" data-toggle="modal" data-target="#loginModal">login here</button>-->
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+        	<div class="modal-header">
+            	<h4 class="modal-title" id="loginTitle">Enter your details here to take test</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                	<span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+            	<div class="form-group">
+                    <label class="col-form-label sr-only" for="username">Matric Number</label>
+                    <input id="matno" class="form-control border-secondary" type="text" placeholder="CST/NDCOMS/2017/000"/>
+                </div>
+                
+                <div class="form-group">
+                	<select id="grpno" class="form-control">
+                    	<option disabled selected>Select your group</option>
+                    	<option value="1">Group 1</option>
+                        <option value="2">Group 2</option>
+                        <option value="3">Group 3</option>
+                        <option value="4">Group 4</option>
+                        <option value="5">Group 5</option>
+                        <option value="6">Group 6</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+            
+                	<button id="goButton" type="button" class="btn btn-info">Go</button>
+  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		<div id="timer" class="bg-success mt-5"><span id="scoreSpan" class=" ml-3 float-left">Note : You must select an option before moving to a next question</span><span class="float-right pt-1 pr-5" id="timerSpan">Time Alloted = 7 min(s) : 00 sec(s)</span></div>
+		
+        <div>
+    	<div class="card mt-1">
+        	<div class="card-header lead font-weight-bold" id="questionNumber">
+            	Instructions 
+            </div>
+            
+            <div class="card-body">
+            	<h5 class="card-title mb-5 font-italic">Please read the following instructions carefully</h5>
+               
+                <div id="optionsDiv">
+                    <ul>
+                    	<li>There are ten(10) questions to be answered within 7 minutes.</li>
+                        <li>All questions carry equal marks.</li>
+                        <li>You must answer a question before going to the next.</li>
+                        <li>Be sure of your answer before going to a next question as there is no provision for going back.</li>
+                        <li>Wish you all the best!!!</li>
+                    </ul>
+                    
+                    
+             <!--   
+               <a class="btn text-left nav-item nav-link border-dark mt-2 mb-4">
+                   
+                    <div class="form-check">
+                         <form name="myform">
+                            <input value="dothis" class="form-check-input" type="radio" onChange="showe()" name="radioGroup" checked/>
+                            <label id="option1" class="form-check-label">option1</label>
+                         <form>
+                    </div>
+                    
+                </a>
+                
+               <a class="btn text-left nav-item nav-link border-dark  mt-2 mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioGroup"/>
+                        <label id="option1" class="form-check-label">option2</label>
+                    </div>
+                </a>-->
+               <!-- <a class="btn text-left nav-item nav-link border-dark  mt-2 mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioGroup"/>
+                        <label id="option1" class="form-check-label">option1</label>
+                    </div>
+                </a>-->
+               
+                </div>
+                
+                
+              
+                <div style="text-align:center">
+                <button id="startButton" type="button" class="btn btn-lg text-success bg-white border-success" data-toggle="modal" data-target="#loginModal">Start Test</button>
+                <button id="nextButton" type="button" class="btn btn-lg text-success bg-white border-success float-right">Next</button>
+				</div>
+            </div>
+          </div>
+            
+        </div>
+    
+    
+    
+    
+</div>
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/codes.js"></script>
+
+</body>
+</html>

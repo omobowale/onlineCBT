@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jq/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<form>
+	<input class="a" value="a" type="radio" name="radio" />one<br>
+    <input class="a" value="b" type="radio" name="radio"/>two<br>
+    <input id="button" type="button" value="check"/>
+</form>
+
+
+<script>
+	$(function(){
+		
+		/*$("#button").click(function(){
+			if ($(".a").is(':checked')){
+				alert("i worked");
+				}
+			else{
+				alert("not working");
+				}
+			});*/
+			$("#button").attr('disabled','disabled');
+			$(".a").change(function(){
+			if ($(this).is(':checked')){
+				//alert($(this).val());
+				$("#button").removeAttr('disabled','disabled');
+				}
+			else{
+				alert("not working");
+				}
+			});
+		
+		})
+</script>
+</body>
+</html>

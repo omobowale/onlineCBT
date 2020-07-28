@@ -1,0 +1,54 @@
+Which of the following is used to get the length of an array named arr in Java?###
+
+All programs can be written in terms of three types of control structures: _______, _______ and _________.###
+
+
+Instance variables of types char, byte, short, int, long, float and double are all given the value ________ by default.###
+
+Instance variables of type boolean are given the value ______ by default.###
+
+Which of the following indicates Java program for declaring a variable, sum, of type integer.###
+
+Given that,
+int x = 4;
+What is the output of the following?
+
+System.out.print(++x + " : ");
+System.out.print(++x);
+###
+
+if (gender == 1)
+System.out.println("Woman");    
+else;
+System.out.println("Man");
+What is the error in the above code?###
+
+Write a Java statement to accomplish each of the following task: Assign 1 to variable x of integer type.###
+
+Keyword public is a(n)______###
+
+Java provides two primitive types for storing floating-point numbers in memory: __________ and __________.###
+
+Return type ________ indicates that a method will not return a value.###
+
+The format specifier _______ is used to output values of type float or double.###
+
+Types in Java are divided into two categories : _______ types and _________ types.###
+
+Java applications begin execution at method _______.###
+
+Write statement to accomplish the following task:
+Create a Scanner called input that reads values from the standard input.###
+
+The arithmetic operators with the same precedence as multiplication are ________ and ________ .###
+
+___________ are used to document a program and improve its readability.###
+
+Assuming that x = 2 and y = 3, what does the following statement display? 
+System.out.printf( "Value of %d + %d is %d\n", x, y, ( x + y ) );###
+
+Given that y = ab + 7c, which of the following is the correct Java statement for this equation?###
+
+What is the result of the following? x = 2 % 2 + 2 * 2 - 2 / 2 ;
+
+
